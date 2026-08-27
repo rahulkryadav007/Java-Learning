@@ -1,103 +1,34 @@
 # ☕ Java Training – Beginner to Advanced
 
-A **simple, practical, and beginner-friendly Java learning repository**. The goal is that a student who is completely new to Java can start here, understand each concept, run the examples, and gradually build a strong foundation.
+A **complete, beginner-friendly Java learning course** with simple theory, separate runnable examples, comments, and practice questions.
 
-## 🎯 Who is this for?
-
-- Complete beginners learning Java for the first time
-- Students preparing for college exams or interviews
-- Developers revising Java fundamentals
-- Anyone who wants to understand Java with **simple explanations + commented code**
+> **Important:** OOP projects are kept separate from this Java Basics course. This repository focuses on learning Java step-by-step before moving into projects.
 
 ## 📚 Java Basics Roadmap
 
-### 1. Java History
-Learn where Java came from, why it was created, major milestones, and why Java is still widely used.
+1. **Java History** – origin, Oak, Java release, WORA
+2. **JDK, JRE & JVM** – setup and Java execution flow
+3. **Data Types & Variables** – primitive/reference types, casting, `final`
+4. **Operators** – arithmetic, relational, logical, assignment, unary, ternary
+5. **Control Flow** – `if`, `if-else`, nested `if`, `else-if`, `switch-case`
+6. **Loops** – `for`, `while`, `do-while`, nested loops, `break`, `continue`
+7. **Methods** – parameters, return values, `void`, calling methods, overloading
 
-📁 `01-Java-History/`
+## 📁 Proper Java Packages
 
-### 2. JDK, JRE & JVM
-Understand the Java platform and the complete flow:
+Every Java example uses a clear package name. There is **no default package**.
 
-`Java Source Code → javac → Bytecode → JVM → Machine Code`
-
-Also learn how to install Java and verify the setup.
-
-📁 `02-JDK-JRE-JVM/`
-
-### 3. Data Types & Variables
-Learn:
-- Variables
-- Primitive data types
-- Reference types
-- Type casting
-- Constants using `final`
-
-📁 `03-Data-Types/`
-
-### 4. Operators
-Learn arithmetic, relational, logical, assignment, unary, ternary, and other commonly used operators.
-
-📁 `04-Operators/`
-
-### 5. Control Flow Statements
-Learn how Java makes decisions using:
-- `if`
-- `if-else`
-- `else-if`
-- Nested `if`
-- `switch`
-
-📁 `05-Control-Flow/`
-
-### 6. Loops
-Learn how to repeat code using:
-- `for`
-- `while`
-- `do-while`
-- Nested loops
-- `break`
-- `continue`
-
-📁 `06-Loops/`
-
-### 7. Methods
-Learn how to divide a program into reusable blocks using methods. Topics include parameters, return values, `void`, method calling, and overloading.
-
-📁 `07-Methods/`
-
-## ▶️ How to Run the Examples
-
-Make sure Java is installed.
-
-```bash
-java -version
-javac -version
+```text
+com.history
+com.jvm
+com.datatypes
+com.operators
+com.controlflow
+com.loop
+com.method
 ```
 
-Compile a file:
-
-```bash
-javac HelloWorld.java
-```
-
-Run it:
-
-```bash
-java HelloWorld
-```
-
-> Run the commands from the folder containing the `.java` file.
-
-## 🧠 Recommended Learning Method
-
-1. Read the topic README first.
-2. Understand the code comments.
-3. Type the example yourself instead of only copying it.
-4. Run the program.
-5. Change the values and predict the output.
-6. Do the small practice questions at the end of each topic.
-7. Move to the next topic only after you understand the current one.
+This makes the examples easier to import into an IDE and understand as a real Java project.
 
 ## 🗂️ Repository Structure
 
@@ -108,56 +39,83 @@ Java_Training/
 │   └── README.md
 │
 ├── 02-JDK-JRE-JVM/
-│   ├── README.md
-│   └── JavaSetupExample.java
+│   └── README.md
 │
 ├── 03-Data-Types/
 │   ├── README.md
-│   └── DataTypesExample.java
+│   └── DataTypesExample.java       # package com.datatypes
 │
 ├── 04-Operators/
-│   ├── README.md
-│   └── OperatorsExample.java
+│   └── README.md
 │
 ├── 05-Control-Flow/
 │   ├── README.md
-│   ├── IfElseExample.java
-│   └── SwitchExample.java
+│   ├── IfElseExample.java          # package com.controlflow
+│   ├── NestedIfExample.java        # package com.controlflow
+│   ├── IfElseIfExample.java        # package com.controlflow
+│   └── SwitchCaseExample.java      # package com.controlflow
 │
 ├── 06-Loops/
 │   ├── README.md
-│   ├── ForLoopExample.java
-│   ├── WhileLoopExample.java
-│   └── DoWhileExample.java
+│   ├── ForLoopExample.java         # package com.loop
+│   ├── WhileLoopExample.java       # package com.loop
+│   └── DoWhileLoopExample.java     # package com.loop
 │
 └── 07-Methods/
     ├── README.md
-    ├── MethodExample.java
-    └── MethodOverloadingExample.java
+    └── MethodExample.java          # package com.method
 ```
 
-## 🚀 Coming Next
+## ▶️ Running a Packaged Example
 
-This repository can be expanded into a complete Java course with:
+For example, if your source file begins with:
 
-- OOP – Class & Object
+```java
+package com.loop;
+```
+
+compile from the project root using:
+
+```bash
+javac -d . 06-Loops/ForLoopExample.java
+```
+
+Then run:
+
+```bash
+java com.loop.ForLoopExample
+```
+
+For an IDE such as IntelliJ IDEA or Eclipse, import the repository as a Java project and mark the source root appropriately.
+
+## 🧠 Recommended Learning Method
+
+For every topic:
+
+1. Read the README.
+2. Understand the concept in simple language.
+3. Open the separate `.java` example.
+4. Read the comments line by line.
+5. Run the program yourself.
+6. Change the values and predict the output.
+7. Complete the practice questions.
+
+## 🚀 Next Stage
+
+After Java Basics, create a **separate OOP/Projects section or repository** for:
+
+- Class & Object
 - Constructor
 - Encapsulation
 - Inheritance
 - Polymorphism
 - Abstraction
 - Interface
-- Arrays & Strings
-- Exception Handling
-- Collections Framework
-- File Handling
-- Multithreading
-- JDBC
-- Java 8+ Features
-- Projects
+- Banking/OOP project
+- Other practical projects
+
+This keeps the beginner course clean and prevents project code from confusing someone who is still learning Java fundamentals.
 
 ## ⭐ Learning Philosophy
 
 **Understand → Code → Run → Experiment → Practice → Build**
-
-Don't memorize Java syntax. Understand what the code is doing and why it works.
