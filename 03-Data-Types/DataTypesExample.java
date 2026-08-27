@@ -1,28 +1,20 @@
+package com.datatypes;
+
 public class DataTypesExample {
-
     public static void main(String[] args) {
-
         // int stores whole numbers.
         int age = 25;
-
-        // long stores very large whole numbers.
-        // L tells Java that this is a long literal.
+        // long stores very large whole numbers. L marks a long literal.
         long population = 8000000000L;
-
-        // float stores decimal values with lower precision.
-        // f tells Java that the value is a float.
+        // float stores decimal values. f marks a float literal.
         float price = 99.5f;
-
         // double stores decimal values with higher precision than float.
         double pi = 3.14159265359;
-
-        // char stores one character and uses single quotes.
+        // char stores one character using single quotes.
         char grade = 'A';
-
         // boolean stores true or false.
         boolean passed = true;
-
-        // String stores text and uses double quotes.
+        // String stores text using double quotes.
         String name = "Rahul";
 
         System.out.println("Name: " + name);
