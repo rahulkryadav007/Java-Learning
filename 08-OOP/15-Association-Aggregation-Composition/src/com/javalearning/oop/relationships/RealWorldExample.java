@@ -3,6 +3,7 @@ package com.javalearning.oop.relationships;
 import java.util.ArrayList;
 import java.util.List;
 
+// Student independently exist kar sakta hai, College usko contain karta hai.
 class Student {
     private final String name;
 
@@ -16,10 +17,11 @@ class Student {
 }
 
 class College {
+    // Aggregation: students College ke bahar bhi exist kar sakte hain.
     private final List<Student> students;
 
     College(List<Student> students) {
-        this.students = students;
+        this.students = students; // Existing students ki list receive kar rahe hain.
     }
 
     void showStudents() {
@@ -30,10 +32,11 @@ class College {
 }
 
 class Order {
+    // Composition: Order apni internal items collection khud manage karta hai.
     private final List<String> items = new ArrayList<>();
 
     void addItem(String item) {
-        items.add(item);
+        items.add(item); // Order ke andar item add kar rahe hain.
     }
 
     void showItems() {
@@ -43,12 +46,12 @@ class Order {
 
 public class RealWorldExample {
     public static void main(String[] args) {
-        // Aggregation: students can exist independently of College.
+        // Students pehle independently create ho rahe hain -> Aggregation.
         List<Student> students = List.of(new Student("Rahul"), new Student("Aman"));
         College college = new College(students);
         college.showStudents();
 
-        // Composition: Order owns its internal item collection.
+        // Order apni items collection khud create/manage kar raha hai -> Composition.
         Order order = new Order();
         order.addItem("Laptop");
         order.addItem("Mouse");
