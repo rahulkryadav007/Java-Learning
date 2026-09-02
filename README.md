@@ -2,6 +2,8 @@
 
 A structured Java learning repository designed to be followed **one step at a time**.
 
+> **Fresher-friendly:** Examples include simple explanations and Hinglish comments so a beginner can learn by reading and running the code.
+
 ## Learning Path
 
 ```text
@@ -30,6 +32,8 @@ A structured Java learning repository designed to be followed **one step at a ti
 12 Basic Problem Solving
    ↓
 13 OOP
+   ↓
+14 Exception Handling
 ```
 
 ## How to Study
@@ -37,10 +41,11 @@ A structured Java learning repository designed to be followed **one step at a ti
 1. Read the topic README first.
 2. Run the Basic example.
 3. Read the simple Hinglish comments.
-4. Try the Intermediate / Real-world example.
-5. Solve practice questions without copying.
-6. Review interview questions only after attempting them.
-7. Move ahead only when the current topic is comfortable.
+4. Understand why the code works and what happens when it fails.
+5. Try the Intermediate / Real-world example.
+6. Solve practice questions without copying.
+7. Review interview questions only after attempting them.
+8. Move ahead only when the current topic is comfortable.
 
 ## Learning Levels
 
@@ -48,6 +53,24 @@ A structured Java learning repository designed to be followed **one step at a ti
 - 🟡 Intermediate — combine concepts
 - 🔴 Real World — application-style examples
 - 🎯 Interview — questions and scenarios
+
+## Exception Handling Module
+
+The `14-Exception-Handling` folder covers:
+
+- Exception basics
+- `try-catch`
+- Multiple `catch`
+- `finally`
+- Checked vs unchecked exceptions
+- `throw`
+- `throws`
+- Custom exceptions
+- Nested `try`
+- Try-with-resources
+- Common exceptions
+- Mini Bank Project
+- Practice + interview questions
 
 ## Future Path After Core Java
 
